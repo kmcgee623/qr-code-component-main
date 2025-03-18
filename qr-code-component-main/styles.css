@@ -1,5 +1,34 @@
 /* Styling the QR Code to my best knowledge*/
-body {
-    font-family: 'Outfit', sans-serif;
-  }
-  
+.container {
+  width: 350px;
+  height: 500px;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 7rem;
+  margin-left: auto;    
+  margin-right: auto;
+  padding: 20px; /* Add padding to ensure text is not too close to the edges */
+  color: black; /* Ensure text color is set to black or any visible color */
+  font-family: 'Outfit', sans-serif; /* Use the imported font */
+  position: relative; /* Add relative positioning */
+}
+
+.qr-code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-radius: 15px; /* Add border-radius to round the edges */
+}
+
+.bottom-text {
+  text-align: center; /* Center the text */
+  font-size: 14px; /* Adjust font size as needed */
+  margin-top: 10px; /* Push the text to the bottom */
+}
+
+/* Add hover effect to the QR code */
+.qr-code:hover {
+  transform: scale(1.1); /* Scale the QR code on hover */
+  transition: transform 0.3s; /* Add smooth transition effect */
+}
