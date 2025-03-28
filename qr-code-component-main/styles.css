@@ -4,21 +4,37 @@
   height: 500px;
   background-color: white;
   border-radius: 20px;
-  margin-top: 7rem;
+  /* margin-top: 7rem; */
   margin-left: auto;    
   margin-right: auto;
   padding: 20px; /* Add padding to ensure text is not too close to the edges */
   color: black; /* Ensure text color is set to black or any visible color */
   font-family: 'Outfit', sans-serif; /* Use the imported font */
   position: relative; /* Add relative positioning */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow for depth */
 }
 
+/* .body { */
+  /* background: linear-gradient(135deg, #e0f7fa, #e6ee9c); /* Customize these colors */
+  /* height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; Remove default margins */ 
+  
+/* } */
+
+
+.qr-code-container {
+  width: 200px; /* Shrinks the container size */
+  height: auto; /* Let it adjust how it should */
+}
 .qr-code {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  border-radius: 15px; /* Add border-radius to round the edges */
+  border-radius: 15px; /* Adds the border-radius to make rounded edges */
 }
 
 .bottom-text {
@@ -33,6 +49,29 @@
   transition: transform 0.3s; /* Add smooth transition effect */
 }
 
-.attribution {
- 
+footer.attribution {
+  font-size: 12px;
+  text-align: center;
+  color: gray;
+  margin-top: 20px;
 }
+footer.attribution a {
+  color: #3498db;
+  text-decoration: none;
+}
+footer.attribution a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }}
